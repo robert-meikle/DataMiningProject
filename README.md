@@ -2,10 +2,10 @@
 
 ## Stocks Used
 - AAPL: Apple
-- AMD: AMD
-- BRK/A: Berkshire Hathaway A
 - BRK/B: Berkshire Hathaway B
 - DVN: Devon Energy
 - NVDA: Nvidia
+- PCG: Pacific Gas & Electric
 - ROST: Ross
+- V: VISA
 - VNQ: Vanguard Real Estate
