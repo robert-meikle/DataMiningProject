@@ -10,6 +10,50 @@ For this project we have collected historical stock data for 10 different stocks
 ![Low Performance](./visualizations/low_perf.svg)
 ![Test Data](./visualizations/test.svg)
 
+![Relative Strength Index](./visualizations/AAPL_rsi.svg)
+
+## Logistic Regression Model
+### Features Used
+- 5 Day SMA
+- Open price
+- Open Price - previous Open Price
+- Relative Strength Index (RSI)
+
+### Model Accuracy
+```
+LOW:
+--------
+[[646 391]
+ [310 924]]
+
+              precision    recall  f1-score   support
+
+           0       0.68      0.62      0.65      1037
+           1       0.70      0.75      0.72      1234
+
+    accuracy                           0.69      2271
+   macro avg       0.69      0.69      0.69      2271
+weighted avg       0.69      0.69      0.69      2271
+
+TSLA:
+--------
+[[624 456]
+ [307 884]]
+
+              precision    recall  f1-score   support
+
+           0       0.67      0.58      0.62      1080
+           1       0.66      0.74      0.70      1191
+
+    accuracy                           0.66      2271
+   macro avg       0.66      0.66      0.66      2271
+weighted avg       0.66      0.66      0.66      2271
+```
+
+### Performance
+![LOW](./results/LOW_logistic_regr.svg)
+![TSLA](./results/TSLA_logistic_regr.svg)
+
 ## Stock Symbols (Bold indicates testing data)
 - AAPL: Apple
 - BRK/B: Berkshire Hathaway B
