@@ -16,43 +16,87 @@ For this project we have collected historical stock data for 10 different stocks
 ### Features Used
 - 5 Day SMA
 - Open price
-- Open Price - previous Open Price
+- Open Price - previous Close Price
 - Relative Strength Index (RSI)
 
 ### Model Accuracy
 ```
 LOW:
 --------
-[[646 391]
- [310 924]]
+[[631 389]
+ [292 921]]
 
               precision    recall  f1-score   support
 
-           0       0.68      0.62      0.65      1037
-           1       0.70      0.75      0.72      1234
+           0       0.68      0.62      0.65      1020
+           1       0.70      0.76      0.73      1213
 
-    accuracy                           0.69      2271
-   macro avg       0.69      0.69      0.69      2271
-weighted avg       0.69      0.69      0.69      2271
+    accuracy                           0.70      2233
+   macro avg       0.69      0.69      0.69      2233
+weighted avg       0.69      0.70      0.69      2233
 
 TSLA:
 --------
-[[624 456]
- [307 884]]
+[[618 445]
+ [299 871]]
 
               precision    recall  f1-score   support
 
-           0       0.67      0.58      0.62      1080
-           1       0.66      0.74      0.70      1191
+           0       0.67      0.58      0.62      1063
+           1       0.66      0.74      0.70      1170
 
-    accuracy                           0.66      2271
-   macro avg       0.66      0.66      0.66      2271
-weighted avg       0.66      0.66      0.66      2271
+    accuracy                           0.67      2233
+   macro avg       0.67      0.66      0.66      2233
+weighted avg       0.67      0.67      0.66      2233
 ```
 
 ### Performance
 ![LOW](./results/LOW_logistic_regr.svg)
 ![TSLA](./results/TSLA_logistic_regr.svg)
+
+## Random Forest Model
+### Features Used
+- 5 Day SMA
+- Market Cap
+- Open price
+- Open Price - previous Open Price
+- Open Price - previous Close Price
+- Relative Strength Index (RSI)
+
+### Model Accuracy
+```
+LOW:
+--------
+[[555 465]
+ [461 752]]
+
+              precision    recall  f1-score   support
+
+           0       0.55      0.54      0.55      1020
+           1       0.62      0.62      0.62      1213
+
+    accuracy                           0.59      2233
+   macro avg       0.58      0.58      0.58      2233
+weighted avg       0.59      0.59      0.59      2233
+
+TSLA:
+--------
+[[677 386]
+ [519 651]]
+
+              precision    recall  f1-score   support
+
+           0       0.57      0.64      0.60      1063
+           1       0.63      0.56      0.59      1170
+
+    accuracy                           0.59      2233
+   macro avg       0.60      0.60      0.59      2233
+weighted avg       0.60      0.59      0.59      2233
+```
+
+### Performance
+![LOW](./results/LOW_random_forest.svg)
+![TSLA](./results/TSLA_random_forest.svg)
 
 ## Stock Symbols (Bold indicates testing data)
 - AAPL: Apple
