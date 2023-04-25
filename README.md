@@ -23,31 +23,31 @@ For this project we have collected historical stock data for 10 different stocks
 ```
 LOW:
 --------
-[[631 389]
- [292 921]]
+[[649 371]
+ [298 915]]
 
               precision    recall  f1-score   support
 
-           0       0.68      0.62      0.65      1020
-           1       0.70      0.76      0.73      1213
+           0       0.69      0.64      0.66      1020
+           1       0.71      0.75      0.73      1213
 
     accuracy                           0.70      2233
-   macro avg       0.69      0.69      0.69      2233
-weighted avg       0.69      0.70      0.69      2233
+   macro avg       0.70      0.70      0.70      2233
+weighted avg       0.70      0.70      0.70      2233
 
 TSLA:
 --------
-[[618 445]
- [299 871]]
+[[683 380]
+ [345 825]]
 
               precision    recall  f1-score   support
 
-           0       0.67      0.58      0.62      1063
-           1       0.66      0.74      0.70      1170
+           0       0.66      0.64      0.65      1063
+           1       0.68      0.71      0.69      1170
 
-    accuracy                           0.67      2233
-   macro avg       0.67      0.66      0.66      2233
-weighted avg       0.67      0.67      0.66      2233
+    accuracy                           0.68      2233
+   macro avg       0.67      0.67      0.67      2233
+weighted avg       0.68      0.68      0.67      2233
 ```
 
 ### Performance
