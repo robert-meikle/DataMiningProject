@@ -12,6 +12,41 @@ For this project we have collected historical stock data for 10 different stocks
 
 ![Relative Strength Index](./visualizations/AAPL_rsi.svg)
 
+## Baseline, Random Choice
+### Model Accuracy
+```
+LOW:
+--------
+[[496 524]
+ [600 613]]
+
+              precision    recall  f1-score   support
+
+           0       0.45      0.49      0.47      1020
+           1       0.54      0.51      0.52      1213
+
+    accuracy                           0.50      2233
+   macro avg       0.50      0.50      0.50      2233
+weighted avg       0.50      0.50      0.50      2233
+
+TSLA:
+--------
+[[548 515]
+ [581 589]]
+
+              precision    recall  f1-score   support
+
+           0       0.49      0.52      0.50      1063
+           1       0.53      0.50      0.52      1170
+
+    accuracy                           0.51      2233
+   macro avg       0.51      0.51      0.51      2233
+weighted avg       0.51      0.51      0.51      2233
+```
+### Performance
+![LOW](./results/LOW_baseline.svg)
+![TSLA](./results/TSLA_baseline.svg)
+
 ## Logistic Regression Model
 ### Features Used
 - 5 Day SMA
