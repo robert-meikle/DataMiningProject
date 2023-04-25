@@ -12,6 +12,41 @@ For this project we have collected historical stock data for 10 different stocks
 
 ![Relative Strength Index](./visualizations/AAPL_rsi.svg)
 
+## Baseline, Random Choice
+### Model Accuracy
+```
+LOW:
+--------
+[[496 524]
+ [600 613]]
+
+              precision    recall  f1-score   support
+
+           0       0.45      0.49      0.47      1020
+           1       0.54      0.51      0.52      1213
+
+    accuracy                           0.50      2233
+   macro avg       0.50      0.50      0.50      2233
+weighted avg       0.50      0.50      0.50      2233
+
+TSLA:
+--------
+[[548 515]
+ [581 589]]
+
+              precision    recall  f1-score   support
+
+           0       0.49      0.52      0.50      1063
+           1       0.53      0.50      0.52      1170
+
+    accuracy                           0.51      2233
+   macro avg       0.51      0.51      0.51      2233
+weighted avg       0.51      0.51      0.51      2233
+```
+### Performance
+![LOW](./results/LOW_baseline.svg)
+![TSLA](./results/TSLA_baseline.svg)
+
 ## Logistic Regression Model
 ### Features Used
 - 5 Day SMA
@@ -23,31 +58,31 @@ For this project we have collected historical stock data for 10 different stocks
 ```
 LOW:
 --------
-[[631 389]
- [292 921]]
+[[649 371]
+ [298 915]]
 
               precision    recall  f1-score   support
 
-           0       0.68      0.62      0.65      1020
-           1       0.70      0.76      0.73      1213
+           0       0.69      0.64      0.66      1020
+           1       0.71      0.75      0.73      1213
 
     accuracy                           0.70      2233
-   macro avg       0.69      0.69      0.69      2233
-weighted avg       0.69      0.70      0.69      2233
+   macro avg       0.70      0.70      0.70      2233
+weighted avg       0.70      0.70      0.70      2233
 
 TSLA:
 --------
-[[618 445]
- [299 871]]
+[[683 380]
+ [345 825]]
 
               precision    recall  f1-score   support
 
-           0       0.67      0.58      0.62      1063
-           1       0.66      0.74      0.70      1170
+           0       0.66      0.64      0.65      1063
+           1       0.68      0.71      0.69      1170
 
-    accuracy                           0.67      2233
-   macro avg       0.67      0.66      0.66      2233
-weighted avg       0.67      0.67      0.66      2233
+    accuracy                           0.68      2233
+   macro avg       0.67      0.67      0.67      2233
+weighted avg       0.68      0.68      0.67      2233
 ```
 
 ### Performance
