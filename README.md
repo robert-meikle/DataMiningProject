@@ -133,6 +133,48 @@ weighted avg       0.60      0.59      0.59      2233
 ![LOW](./results/LOW_random_forest.svg)
 ![TSLA](./results/TSLA_random_forest.svg)
 
+## KNN Classifier
+### Features Used
+- 5 Day SMA
+- Open price
+- Open Price - previous Close Price
+- Relative Strength Index (RSI)
+
+### Model Accuracy
+```
+LOW:
+--------
+[[490 518]
+ [349 857]]
+
+              precision    recall  f1-score   support
+
+           0       0.58      0.49      0.53      1008
+           1       0.62      0.71      0.66      1206
+
+    accuracy                           0.61      2214
+   macro avg       0.60      0.60      0.60      2214
+weighted avg       0.61      0.61      0.60      2214
+
+TSLA:
+--------
+[[536 515]
+ [380 783]]
+
+              precision    recall  f1-score   support
+
+           0       0.59      0.51      0.54      1051
+           1       0.60      0.67      0.64      1163
+
+    accuracy                           0.60      2214
+   macro avg       0.59      0.59      0.59      2214
+weighted avg       0.59      0.60      0.59      2214
+```
+
+### Performance
+![LOW](./results/LOW_knn.svg)
+![TSLA](./results/TSLA_knn.svg)
+
 ## Stock Symbols (Bold indicates testing data)
 - AAPL: Apple
 - BRK/B: Berkshire Hathaway B
